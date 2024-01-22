@@ -19,7 +19,7 @@ spec:
               service:
                 name: my-deployment
                 port:
-                  number: 80
+                  number: 8000
   tls:
     - hosts:
         - api-dev.tt.golf
