@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: my-app-container
-          image: us-central1-docker.pkg.dev/tourtimegolf/tt-api/tt-api:88965450f0328765e579a24df0118fc11baec24a
+          image: us-central1-docker.pkg.dev/tourtimegolf/tt-api/tt-api:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
