@@ -3,6 +3,5 @@ kind: Kustomization
 resources:
 - deployment.yaml
 - service.yaml
-- ../overlays/ingress.yaml
 generators:
 - ./secret-generator.yaml
