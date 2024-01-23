@@ -8,5 +8,7 @@ resources:
   - ingress.yaml
 
 configMapGenerator:
-  - name: the-map
-    env: config.properties
+  - name: envvars
+    behaviour: merge
+    literals:
+    - TEST_ROUTE=production
