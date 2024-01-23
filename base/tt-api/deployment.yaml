@@ -21,10 +21,10 @@ spec:
                 secretKeyRef:
                   key: API_KEY
                   name: super-secret     # name of secret file
-            - name: API_KEY
+            - name: DB_PASS
               valueFrom:
                 secretKeyRef:
-                  key: API_KEY
+                  key: DB_PASS
                   name: super-secret     # name of secret file                  
           ports:
             - containerPort: 8000
