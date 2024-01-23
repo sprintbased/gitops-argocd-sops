@@ -1,6 +1,8 @@
 bases:
   - ../../base
 namespace: production
+patchesStrategicMerge:
+  - patches/tt-api-image.yaml
 resources:
   - namespace.yaml
   - ingress.yaml

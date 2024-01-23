@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tt-api
+spec:
+  template:
+    spec:
+      containers:
+        - name: tt-api
+          image: us-central1-docker.pkg.dev/tourtimegolf/tt-api/tt-api:latest
+          envFrom:
+            - configMapRef:
+                name: the-map
