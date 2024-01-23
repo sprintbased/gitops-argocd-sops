@@ -4,3 +4,7 @@ namespace: production
 resources:
   - namespace.yaml
   - ingress.yaml
+
+configMapGenerator:
+  - name: the-map
+    env: config.properties
