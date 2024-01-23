@@ -16,12 +16,12 @@ spec:
         - name: my-app-container
           image: us-central1-docker.pkg.dev/tourtimegolf/tt-api/tt-api:latest
           env:
-            - name: pass
+            - name: THE_PASSWORD
               valueFrom:
                 secretKeyRef:
                   key: pass
                   name: super-secret     # name of secret file
-            - name: user
+            - name: THE_USER
               valueFrom:
                 secretKeyRef:
                   key: user
