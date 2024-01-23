@@ -9,4 +9,8 @@ spec:
         - name: tt-api
           image: us-central1-docker.pkg.dev/tourtimegolf/tt-api/tt-api:latest
       imagePullSecrets:
-        - name: super-secret
+        - name: pass
+          valueFrom:
+            secretKeyRef:
+              key: pass
+              name: secret     # name of secret file
