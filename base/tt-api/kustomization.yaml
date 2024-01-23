@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
+  - secret.yaml
 # - ingress.yaml
 generators:
   - ./secret-generator.yaml
