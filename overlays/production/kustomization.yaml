@@ -1,0 +1,6 @@
+bases:
+  - ../../base
+namespace: production
+resources:
+  - namespace.yaml
+  - ingress.yaml
