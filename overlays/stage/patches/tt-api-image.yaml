@@ -9,5 +9,5 @@ spec:
         - name: tt-api
           image: us-central1-docker.pkg.dev/tourtimegolf/tt-api/tt-api:latest
           envFrom:
-            - configMapRef:
-                name: the-map
+            configMapRef:
+              name: envvars
