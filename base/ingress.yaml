@@ -9,7 +9,7 @@ spec:
     - host: api-dev.tt.golf
       http:
         paths:
-          - path: /
+          - path: /test
             pathType: Prefix
             backend:
               service:
