@@ -6,9 +6,5 @@ patchesStrategicMerge:
 resources:
   - namespace.yaml
   - ingress.yaml
-
-configMapGenerator:
-  - name: envvars
-    behaviour: merge
-    literals:
-    - TEST_ROUTE=production
+generators:
+  - ./secret-generator.yaml
