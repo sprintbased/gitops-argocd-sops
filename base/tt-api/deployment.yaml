@@ -20,7 +20,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   key: pass
-                  name: secret     # name of secret file
+                  name: super-secret     # name of secret file
           ports:
             - containerPort: 8000
       imagePullSecrets:
