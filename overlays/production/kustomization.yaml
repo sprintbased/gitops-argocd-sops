@@ -6,3 +6,5 @@ patchesStrategicMerge:
 resources:
   - namespace.yaml
   - ingress.yaml
+# generators:
+#   - ./secret-generator.yaml
