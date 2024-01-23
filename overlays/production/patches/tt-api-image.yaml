@@ -7,10 +7,4 @@ spec:
     spec:
       containers:
         - name: tt-api
-          image: us-central1-docker.pkg.dev/tourtimegolf/tt-api/tt-api:latest      
-          env:
-            - name: pass
-              valueFrom:
-                secretKeyRef:
-                  key: pass
-                  name: secret     # name of secret file
+          image: us-central1-docker.pkg.dev/tourtimegolf/tt-api/tt-api:latest
