@@ -1,6 +1,0 @@
-apiVersion: v1
-data:
-  TEST_ROUTE: production
-kind: ConfigMap
-metadata:
-  name: envvars
