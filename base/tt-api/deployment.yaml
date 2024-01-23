@@ -16,15 +16,15 @@ spec:
         - name: my-app-container
           image: us-central1-docker.pkg.dev/tourtimegolf/tt-api/tt-api:latest
           env:
-            - name: THE_PASSWORD
+            - name: API_KEY
               valueFrom:
                 secretKeyRef:
-                  key: pass
+                  key: API_KEY
                   name: super-secret     # name of secret file
-            - name: THE_USER
+            - name: API_KEY
               valueFrom:
                 secretKeyRef:
-                  key: user
+                  key: API_KEY
                   name: super-secret     # name of secret file                  
           ports:
             - containerPort: 8000
