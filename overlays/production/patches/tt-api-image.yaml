@@ -8,3 +8,6 @@ spec:
       containers:
         - name: tt-api
           image: us-central1-docker.pkg.dev/tourtimegolf/tt-api/tt-api:latest
+          envFrom:
+            - secretRef:
+                name: secret
